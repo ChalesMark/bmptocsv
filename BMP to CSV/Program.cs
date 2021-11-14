@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -80,7 +80,7 @@ namespace BMP_to_CSV
                 for (int x = 0; x < input.Width; x++)
                 {
                     Color pixel = input.GetPixel(x, y);
-                    finalString += x + ",0," + y + "," + GetLegendName(legend, HexConverter(pixel)) + "\n";
+                    finalString += x + "," +y + "," + GetLegendName(legend, HexConverter(pixel)) + "\n";
                 }
             }
             #endregion
@@ -91,6 +91,10 @@ namespace BMP_to_CSV
             Console.WriteLine("It can be found in the same location as this exe under the name \"" + originalName + "_converted.csv" + "\"");
         }
 
+        /*
+         * GetLegendName
+         * This checks if a hex value exists on the legend and returns the name, if not it returns the hex value
+         */
         private static string GetLegendName(Dictionary<string, string> legend, string v)
         {
             if (legend.ContainsKey(v.ToLower()))
@@ -104,7 +108,11 @@ namespace BMP_to_CSV
 
         }
 
-        private static String HexConverter(System.Drawing.Color c)
+        /*
+         * HexConverter
+         * Converts color to hex
+         */
+        private static String HexConverter(Color c)
         {
             return "#" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
         }
