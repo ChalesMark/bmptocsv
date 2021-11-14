@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMP to CSV", "BMP to CSV\BMP to CSV.csproj", "{281A282C-EAFE-4CDF-AA7D-088E5A4D9D5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{281A282C-EAFE-4CDF-AA7D-088E5A4D9D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281A282C-EAFE-4CDF-AA7D-088E5A4D9D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281A282C-EAFE-4CDF-AA7D-088E5A4D9D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281A282C-EAFE-4CDF-AA7D-088E5A4D9D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD89831F-3EAE-4688-AC18-A49031CB9BEB}
+	EndGlobalSection
+EndGlobal
